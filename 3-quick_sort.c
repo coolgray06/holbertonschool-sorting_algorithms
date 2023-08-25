@@ -13,11 +13,10 @@ void quick_sort(int *array, size_t size);
 
 void swap_ints(int *a, int *b)
 {
-        int tmp;
-
-        tmp = *a;
-        *a = *b;
-        *b = tmp;
+	int tmp;
+	tmp = *a;
+	*a = *b;
+	*b = tmp;
 }
 
 /**
@@ -68,7 +67,7 @@ int lomuto_partition(int *array, size_t size, int left, int right)
 void lomuto_sort(int *array, size_t size, int left, int right)
 {
 	int belong;
-	
+
 	if (right - left > 0)
 	{
 		belong = lomuto_partition(array, size, left, right);
